@@ -1,9 +1,12 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `firebase.auth.rest`
+# firebase.auth.rest
 
 <!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/firebase.auth.rest)](https://CRAN.R-project.org/package=firebase.auth.rest)
 <!-- badges: end -->
 
 R wrapper for [Firebase Authentication REST
