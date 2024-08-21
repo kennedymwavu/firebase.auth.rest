@@ -1,0 +1,25 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>http://mwavu.com/firebase.auth.rest/404.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/LICENSE-text.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/LICENSE.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/authors.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/index.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/api_key.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/base_url.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/change_email.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/change_password.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/delete_account.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/error_handler.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/exchange_custom_token.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/exchange_refresh_token.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/get_user_data.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/index.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/perform_req.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/send_email_verification.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/send_password_reset_email.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/sign_in.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/sign_in_anonymously.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/sign_up.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/update_profile.html</loc></url>
+</urlset>
+
