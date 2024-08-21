@@ -1,6 +1,6 @@
 Package: firebase.auth.rest
 Title: R Wrapper for Firebase Authentication REST API
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Kennedy", "Mwavu", , "mwavukennedy@gmail.com", role = c("aut", "cre", "cph"),
            comment = c("Maintainer/developer of firebase.auth.rest since 2024", ORCID = "0009-0006-3157-7234"))
