@@ -5,13 +5,13 @@
 <url><loc>http://mwavu.com/firebase.auth.rest/authors.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/index.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/api_key.html</loc></url>
-<url><loc>http://mwavu.com/firebase.auth.rest/reference/base_url.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/change_email.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/change_password.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/delete_account.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/error_handler.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/exchange_custom_token.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/exchange_refresh_token.html</loc></url>
+<url><loc>http://mwavu.com/firebase.auth.rest/reference/get_base_url.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/get_user_data.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/index.html</loc></url>
 <url><loc>http://mwavu.com/firebase.auth.rest/reference/perform_req.html</loc></url>
