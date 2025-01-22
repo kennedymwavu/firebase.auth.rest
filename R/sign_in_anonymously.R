@@ -27,7 +27,7 @@
 #'   user
 #' }
 #' @export
-sign_in_anonymously <- \() {
+sign_in_anonymously <- function() {
   url_path <- "/v1/accounts:signUp"
   data <- list(returnSecureToken = TRUE)
   perform_req(url_path = url_path, data = data)

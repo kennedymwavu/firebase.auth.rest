@@ -36,7 +36,7 @@
 #'   lapply(user_data, `[[`, 1)
 #' }
 #' @export
-get_user_data <- \(id_token) {
+get_user_data <- function(id_token) {
   url_path <- "/v1/accounts:lookup"
   data <- list(idToken = id_token)
   perform_req(url_path = url_path, data = data)

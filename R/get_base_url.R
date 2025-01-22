@@ -8,7 +8,7 @@
 #' @examples
 #' get_base_url()
 #' @keywords internal
-get_base_url <- \(endpoint = "identitytoolkit") {
+get_base_url <- function(endpoint = "identitytoolkit") {
   switch(
     EXPR = endpoint,
     identitytoolkit = "https://identitytoolkit.googleapis.com",

@@ -29,7 +29,7 @@
 #'   response
 #' }
 #' @export
-exchange_refresh_token <- \(refresh_token) {
+exchange_refresh_token <- function(refresh_token) {
   url_path <- "/v1/token"
   data <- list(refresh_token = refresh_token, grant_type = "refresh_token")
   base_url <- get_base_url(endpoint = "securetoken")

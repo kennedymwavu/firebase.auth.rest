@@ -24,7 +24,7 @@
 #'      - `code`: Error code
 #'      - `message`: Error message
 #' @keywords internal
-perform_req <- \(url_path, data, base_url = get_base_url()) {
+perform_req <- function(url_path, data, base_url = get_base_url()) {
   req <- httr2::request(base_url = base_url) |>
     httr2::req_url_path(url_path) |>
     httr2::req_url_query(key = api_key()) |>

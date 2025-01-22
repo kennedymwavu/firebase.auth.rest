@@ -21,7 +21,7 @@
 #'   response
 #' }
 #' @export
-delete_account <- \(id_token) {
+delete_account <- function(id_token) {
   url_path <- "/v1/accounts:delete"
   data <- list(idToken = id_token)
   perform_req(url_path = url_path, data = data)

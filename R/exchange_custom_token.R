@@ -16,7 +16,7 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-verify-custom-token)
 #' for more details
 #' @export
-exchange_custom_token <- \(token) {
+exchange_custom_token <- function(token) {
   url_path <- "/v1/accounts:signInWithCustomToken"
   data <- list(token = token, returnSecureToken = TRUE)
   perform_req(url_path = url_path, data = data)

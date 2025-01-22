@@ -8,7 +8,7 @@
 #' if (interactive()) {
 #'   api_key()
 #' }
-api_key <- \() {
+api_key <- function() {
   key <- Sys.getenv("FIREBASE_API_KEY")
   if (key == "") {
     stop(

@@ -16,7 +16,7 @@
 #'   send_password_reset_email("user-email-goes-here")
 #' }
 #' @export
-send_password_reset_email <- \(email) {
+send_password_reset_email <- function(email) {
   url_path <- "/v1/accounts:sendOobCode"
   data <- list(email = email, requestType = "PASSWORD_RESET")
   perform_req(url_path = url_path, data = data)

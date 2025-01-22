@@ -33,7 +33,7 @@
 #'   response
 #' }
 #' @export
-change_password <- \(id_token, password) {
+change_password <- function(id_token, password) {
   url_path <- "/v1/accounts:update"
   data <- list(
     idToken = id_token,
