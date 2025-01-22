@@ -4,7 +4,7 @@
 \alias{perform_req}
 \title{Perform a Firebase API request}
 \usage{
-perform_req(url_path, data, base_url = base_url())
+perform_req(url_path, data, base_url = get_base_url())
 }
 \arguments{
 \item{url_path}{String. The relative path to perform the request on.
@@ -22,7 +22,7 @@ for all valid values
 
 \item{data}{A named list. Request body payload.}
 
-\item{base_url}{Base url for the request. Defaults to \code{\link[=base_url]{base_url()}}.
+\item{base_url}{Base url for the request. Defaults to \code{\link[=get_base_url]{get_base_url()}}.
 Here are some valid ones:}
 }
 \value{
@@ -45,3 +45,4 @@ This function provides a boilerplate for constructing an
 }
 }
 }
+\keyword{internal}
