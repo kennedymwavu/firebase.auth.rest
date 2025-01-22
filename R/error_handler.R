@@ -2,7 +2,7 @@
 #'
 #' Used in the `tryCatch()` blocks of `*()` functions
 #' @param e The error.
-error_handler <- \(e) {
+error_handler <- function(e) {
   resp_err <- httr2::last_response()
   if (!is.null(resp_err)) {
     resp_err <- httr2::resp_body_json(resp_err)$error

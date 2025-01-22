@@ -16,7 +16,7 @@
 #'   send_email_verification("id-token-goes-here")
 #' }
 #' @export
-send_email_verification <- \(id_token) {
+send_email_verification <- function(id_token) {
   url_path <- "/v1/accounts:sendOobCode"
   data <- list(idToken = id_token, requestType = "VERIFY_EMAIL")
   perform_req(url_path = url_path, data = data)

@@ -36,7 +36,7 @@
 #'   response
 #' }
 #' @export
-change_email <- \(id_token, email) {
+change_email <- function(id_token, email) {
   url_path <- "/v1/accounts:update"
   data <- list(
     idToken = id_token,

@@ -21,7 +21,7 @@
 #'   sign_up(email = "new-user-email", password = "strong-password")
 #' }
 #' @export
-sign_up <- \(email, password) {
+sign_up <- function(email, password) {
   url_path <- "/v1/accounts:signUp"
   data <- list(email = email, password = password, returnSecureToken = TRUE)
   perform_req(url_path = url_path, data = data)

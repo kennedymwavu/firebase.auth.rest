@@ -40,20 +40,21 @@
 #'   )
 #' }
 #' @export
-update_profile <- \(
-  id_token,
-  display_name = NULL,
-  photo_url = NULL,
-  delete_attribute = NULL
-) {
+update_profile <- function(
+    id_token,
+    display_name = NULL,
+    photo_url = NULL,
+    delete_attribute = NULL) {
   url_path <- "/v1/accounts:update"
+
   data <- list(
     idToken = id_token,
     displayName = display_name,
     photoUrl = photo_url,
     deleteAttribute = delete_attribute,
     returnSecureToken = TRUE
-  ) |>
-    Filter(f = Negate(is.null))
+  )
+  data <- Filter(f = Negate(is.null), x = data)
+
   perform_req(url_path = url_path, data = data)
 }

@@ -22,7 +22,7 @@
 #'   sign_in(email = "user-email", password = "strong-password")
 #' }
 #' @export
-sign_in <- \(email, password) {
+sign_in <- function(email, password) {
   url_path <- "/v1/accounts:signInWithPassword"
   data <- list(email = email, password = password, returnSecureToken = TRUE)
   perform_req(url_path = url_path, data = data)

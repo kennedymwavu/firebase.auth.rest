@@ -24,13 +24,22 @@
 #'      - `code`: Error code
 #'      - `message`: Error message
 #' @keywords internal
-perform_req <- \(url_path, data, base_url = get_base_url()) {
-  req <- httr2::request(base_url = base_url) |>
-    httr2::req_url_path(url_path) |>
-    httr2::req_url_query(key = api_key()) |>
-    httr2::req_body_json(data = data)
+perform_req <- function(url_path, data, base_url = get_base_url()) {
+  req <- httr2::req_body_json(
+    req = httr2::req_url_query(
+      .req = httr2::req_url_path(
+        req = httr2::request(base_url = base_url),
+        url_path
+      ),
+      key = api_key()
+    ),
+    data = data
+  )
+
   tryCatch(
-    expr = req |> httr2::req_perform() |> httr2::resp_body_json(),
+    expr = httr2::resp_body_json(
+      resp = httr2::req_perform(req = req)
+    ),
     error = error_handler
   )
 }
