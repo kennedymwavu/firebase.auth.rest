@@ -14,7 +14,7 @@
 #' See [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-api-usage)
 #' for all valid values
 #' @param data A named list. Request body payload.
-#' @param base_url Base url for the request. Defaults to [base_url()].
+#' @param base_url Base url for the request. Defaults to [get_base_url()].
 #' Here are some valid ones:
 #' @return A named list. One of the list items is `error`. See Details.
 #' @details
@@ -23,7 +23,8 @@
 #'    - A list of 2 if response was an error:
 #'      - `code`: Error code
 #'      - `message`: Error message
-perform_req <- \(url_path, data, base_url = base_url()) {
+#' @keywords internal
+perform_req <- \(url_path, data, base_url = get_base_url()) {
   req <- httr2::request(base_url = base_url) |>
     httr2::req_url_path(url_path) |>
     httr2::req_url_query(key = api_key()) |>

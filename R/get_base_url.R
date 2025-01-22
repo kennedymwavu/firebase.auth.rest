@@ -7,9 +7,10 @@
 #' @return String. Base url.
 #' @examples
 #' if (FALSE) {
-#' base_url()
+#'   base_url()
 #' }
-base_url <- \(endpoint = "identitytoolkit") {
+#' @keywords internal
+get_base_url <- \(endpoint = "identitytoolkit") {
   switch(
     EXPR = endpoint,
     identitytoolkit = "https://identitytoolkit.googleapis.com",
