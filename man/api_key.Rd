@@ -14,7 +14,7 @@ Gets your Firebase API key from the env var \code{FIREBASE_API_KEY}. Make sure
 you have defined this variable in your .Renviron file.
 }
 \examples{
-if (FALSE) {
-api_key()
+if (interactive()) {
+  api_key()
 }
 }

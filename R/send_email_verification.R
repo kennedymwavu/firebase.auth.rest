@@ -12,8 +12,8 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-send-email-verification)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' send_email_verification("id-token-goes-here")
+#' if (interactive()) {
+#'   send_email_verification("id-token-goes-here")
 #' }
 #' @export
 send_email_verification <- \(id_token) {

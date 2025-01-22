@@ -6,9 +6,7 @@
 #' - "securetoken"
 #' @return String. Base url.
 #' @examples
-#' if (FALSE) {
-#'   base_url()
-#' }
+#' get_base_url()
 #' @keywords internal
 get_base_url <- \(endpoint = "identitytoolkit") {
   switch(

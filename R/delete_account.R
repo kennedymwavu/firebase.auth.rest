@@ -11,14 +11,14 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-delete-account)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' # first sign in user and get the 'id_token':
-#' user <- sign_in(email = "user@gmail.com", password = "password")
-#' id_token <- user$idToken
+#' if (interactive()) {
+#'   # first sign in user and get the 'id_token':
+#'   user <- sign_in(email = "user@gmail.com", password = "password")
+#'   id_token <- user$idToken
 #'
-#' # delete user account:
-#' response <- delete_account(id_token = id_token)
-#' response
+#'   # delete user account:
+#'   response <- delete_account(id_token = id_token)
+#'   response
 #' }
 #' @export
 delete_account <- \(id_token) {

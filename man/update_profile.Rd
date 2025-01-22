@@ -54,16 +54,16 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-update-
 for more details
 }
 \examples{
-if (FALSE) {
-update_profile(
-  id_token = "id-token-goes-here",
-  display_name = "new-user-display-name",
-  photo_url = "url-to-user-photo"
-)
+if (interactive()) {
+  update_profile(
+    id_token = "id-token-goes-here",
+    display_name = "new-user-display-name",
+    photo_url = "url-to-user-photo"
+  )
 
-# to delete the display name attribute:
-update_profile(
-  delete_attribute = "DISPLAY_NAME"
-)
+  # to delete the display name attribute:
+  update_profile(
+    delete_attribute = "DISPLAY_NAME"
+  )
 }
 }

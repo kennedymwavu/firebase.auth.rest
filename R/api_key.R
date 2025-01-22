@@ -5,8 +5,8 @@
 #'
 #' @return String
 #' @examples
-#' if (FALSE) {
-#' api_key()
+#' if (interactive()) {
+#'   api_key()
 #' }
 api_key <- \() {
   key <- Sys.getenv("FIREBASE_API_KEY")

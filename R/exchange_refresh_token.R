@@ -19,19 +19,19 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-refresh-token)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' # first sign in user and get the 'refresh_token':
-#' user <- sign_in(email = "user@gmail.com", password = "password")
-#' refresh_token <- user$refreshToken
+#' if (interactive()) {
+#'   # first sign in user and get the 'refresh_token':
+#'   user <- sign_in(email = "user@gmail.com", password = "password")
+#'   refresh_token <- user$refreshToken
 #'
-#' # exchange the refresh token:
-#' response <- exchange_refresh_token(refresh_token = refresh_token)
-#' response
+#'   # exchange the refresh token:
+#'   response <- exchange_refresh_token(refresh_token = refresh_token)
+#'   response
 #' }
 #' @export
 exchange_refresh_token <- \(refresh_token) {
   url_path <- "/v1/token"
   data <- list(refresh_token = refresh_token, grant_type = "refresh_token")
-  base_url <- base_url(endpoint = "securetoken")
+  base_url <- get_base_url(endpoint = "securetoken")
   perform_req(url_path = url_path, data = data, base_url = base_url)
 }

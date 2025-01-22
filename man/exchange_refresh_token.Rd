@@ -38,13 +38,13 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-refresh
 for more details
 }
 \examples{
-if (FALSE) {
-# first sign in user and get the 'refresh_token':
-user <- sign_in(email = "user@gmail.com", password = "password")
-refresh_token <- user$refreshToken
+if (interactive()) {
+  # first sign in user and get the 'refresh_token':
+  user <- sign_in(email = "user@gmail.com", password = "password")
+  refresh_token <- user$refreshToken
 
-# exchange the refresh token:
-response <- exchange_refresh_token(refresh_token = refresh_token)
-response
+  # exchange the refresh token:
+  response <- exchange_refresh_token(refresh_token = refresh_token)
+  response
 }
 }

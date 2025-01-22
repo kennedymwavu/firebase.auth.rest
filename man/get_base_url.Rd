@@ -21,8 +21,6 @@ String. Base url.
 Get the base url for Firebase Auth
 }
 \examples{
-if (FALSE) {
-  base_url()
-}
+get_base_url()
 }
 \keyword{internal}

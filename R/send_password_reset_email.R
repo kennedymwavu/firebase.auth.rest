@@ -12,8 +12,8 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-send-password-reset-email)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' send_password_reset_email("user-email-goes-here")
+#' if (interactive()) {
+#'   send_password_reset_email("user-email-goes-here")
 #' }
 #' @export
 send_password_reset_email <- \(email) {
