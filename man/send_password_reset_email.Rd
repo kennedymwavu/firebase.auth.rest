@@ -32,7 +32,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-send-pa
 for more details
 }
 \examples{
-if (FALSE) {
-send_password_reset_email("user-email-goes-here")
+if (interactive()) {
+  send_password_reset_email("user-email-goes-here")
 }
 }

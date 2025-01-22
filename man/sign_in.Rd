@@ -39,7 +39,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-sign-in
 for more details
 }
 \examples{
-if (FALSE) {
-sign_in(email = "user-email", password = "strong-password")
+if (interactive()) {
+  sign_in(email = "user-email", password = "strong-password")
 }
 }

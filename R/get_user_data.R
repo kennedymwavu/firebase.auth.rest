@@ -31,9 +31,9 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-get-account-info)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' user_data <- get_user_data("<id_token>")
-#' lapply(user_data, `[[`, 1)
+#' if (interactive()) {
+#'   user_data <- get_user_data("<id_token>")
+#'   lapply(user_data, `[[`, 1)
 #' }
 #' @export
 get_user_data <- \(id_token) {

@@ -40,8 +40,8 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-sign-in
 for more details.
 }
 \examples{
-if (FALSE) {
-user <- sign_in_anonymously()
-user
+if (interactive()) {
+  user <- sign_in_anonymously()
+  user
 }
 }

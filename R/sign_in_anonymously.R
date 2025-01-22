@@ -22,9 +22,9 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-sign-in-anonymously)
 #' for more details.
 #' @examples
-#' if (FALSE) {
-#' user <- sign_in_anonymously()
-#' user
+#' if (interactive()) {
+#'   user <- sign_in_anonymously()
+#'   user
 #' }
 #' @export
 sign_in_anonymously <- \() {

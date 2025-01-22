@@ -23,17 +23,17 @@
 #' - Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-change-email)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' # first sign in user and get the 'id_token':
-#' user <- sign_in(email = "user@gmail.com", password = "password")
-#' id_token <- user$idToken
+#' if (interactive()) {
+#'   # first sign in user and get the 'id_token':
+#'   user <- sign_in(email = "user@gmail.com", password = "password")
+#'   id_token <- user$idToken
 #'
-#' # change email:
-#' response <- change_email(
-#'   id_token = id_token,
-#'   email = "new.email@mail.com"
-#' )
-#' response
+#'   # change email:
+#'   response <- change_email(
+#'     id_token = id_token,
+#'     email = "new.email@mail.com"
+#'   )
+#'   response
 #' }
 #' @export
 change_email <- \(id_token, email) {

@@ -32,7 +32,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-send-em
 for more details
 }
 \examples{
-if (FALSE) {
-send_email_verification("id-token-goes-here")
+if (interactive()) {
+  send_email_verification("id-token-goes-here")
 }
 }

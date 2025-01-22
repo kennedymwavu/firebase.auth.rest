@@ -17,8 +17,8 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-create-email-password)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' sign_up(email = "new-user-email", password = "strong-password")
+#' if (interactive()) {
+#'   sign_up(email = "new-user-email", password = "strong-password")
 #' }
 #' @export
 sign_up <- \(email, password) {

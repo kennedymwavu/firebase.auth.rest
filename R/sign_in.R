@@ -18,8 +18,8 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password)
 #' for more details
 #' @examples
-#' if (FALSE) {
-#' sign_in(email = "user-email", password = "strong-password")
+#' if (interactive()) {
+#'   sign_in(email = "user-email", password = "strong-password")
 #' }
 #' @export
 sign_in <- \(email, password) {
