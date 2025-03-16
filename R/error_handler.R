@@ -2,6 +2,9 @@
 #'
 #' Used in the `tryCatch()` blocks of `*()` functions
 #' @param e The error.
+#'
+#' @keywords internal
+#' @noRd
 error_handler <- function(e) {
   resp_err <- httr2::last_response()
   if (!is.null(resp_err)) {
