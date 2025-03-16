@@ -1,4 +1,4 @@
-url: http://mwavu.com/firebase.auth.rest/
+url: https://kennedymwavu.github.io/firebase.auth.rest/
 template:
   bootstrap: 5
   bootswatch: zephyr
@@ -6,8 +6,8 @@ template:
 navbar:
   structure:
     right:
-    - github
-    - twitter
+      - github
+      - twitter
   components:
     github:
       icon: fa-github
@@ -21,7 +21,7 @@ navbar:
 home:
   sidebar:
     structure:
-    - license
-    - citation
-    - authors
-    - dev
+      - license
+      - citation
+      - authors
+      - dev

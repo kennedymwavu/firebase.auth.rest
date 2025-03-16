@@ -1,32 +1,26 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # firebase.auth.rest
 
-<!-- badges: start -->
-
-[![CRAN
-status](https://www.r-pkg.org/badges/version/firebase.auth.rest)](https://CRAN.R-project.org/package=firebase.auth.rest)
-<!-- badges: end -->
-
-R wrapper for [Firebase Authentication REST
-API](https://firebase.google.com/docs/reference/rest/auth).
+R wrapper for [Firebase Authentication REST API](https://firebase.google.com/docs/reference/rest/auth).
 
 Designed to be used on the backend of your R applications & APIs.
 
-`{firebase.auth.rest}` enables you to integrate Firebase Authentication
-services seamlessly into your projects, allowing for user
-authentication, account management, and other authentication-related
-tasks.
+`{firebase.auth.rest}` enables you to integrate Firebase Authentication services
+seamlessly into your projects, allowing for user authentication, account
+management, and other authentication-related tasks.
 
 Suitable if you need **absolute full control** on how you build &
-customize your login & registration process/pages, while still using
-Firebase Auth.
+customize your login & registration process/pages, while still using Firebase
+Auth.
 
 # Installation
 
-You can install the development version of `{firebase.auth.rest}` like
-so:
+Get the stable version from CRAN with:
+
+```r
+install.packages("firebase.auth.rest")
+```
+
+You can install the development version from GitHub like so:
 
 ``` r
 remotes::install_github("kennedymwavu/firebase.auth.rest")
@@ -34,22 +28,19 @@ remotes::install_github("kennedymwavu/firebase.auth.rest")
 
 # Usage
 
-1.  Create a [Firebase project](https://console.firebase.google.com/).
+1. Create a [Firebase project](https://console.firebase.google.com/).
+2. Grab the project's API key and place it in your `.Renviron` as `FIREBASE_API_KEY`:
 
-2.  Grab the project’s API key and place it in your `.Renviron` as
-    `FIREBASE_API_KEY`:
-
-    ``` r
+    ```r
     FIREBASE_API_KEY = Your-API-Key-Goes-Here
     ```
 
-3.  Restart your R session.
-
-4.  Connect to your frontend.
+3. Restart your R session.
+4. Connect to your frontend.
 
 Functions in the package are named similarly to the descriptions in the
-[Firebase Authentication REST
-API](https://firebase.google.com/docs/reference/rest/auth) docs.
+[Firebase Authentication REST API](https://firebase.google.com/docs/reference/rest/auth)
+docs.
 
 These are the exported ones:
 
@@ -63,14 +54,8 @@ These are the exported ones:
 - `update_profile()`: Update user profile.
 - `delete_account()`: Delete user account.
 - `get_user_data()`: Get user data from firebase.
-- `exchange_custom_token()`: Exchange custom token for an ID and refresh
-  token.
+- `exchange_custom_token()`: Exchange custom token for an ID and refresh token.
 - `exchange_refresh_token()`: Exchange a refresh token for an ID token.
-
-# Examples
-
-Examples are provided
-[here](https://github.com/kennedymwavu/firebase.auth.rest-examples).
 
 # Related projects
 
