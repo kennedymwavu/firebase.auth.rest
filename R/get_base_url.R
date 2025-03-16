@@ -7,8 +7,12 @@
 #' @return String. Base url.
 #' @examples
 #' get_base_url()
+#'
 #' @keywords internal
-get_base_url <- function(endpoint = "identitytoolkit") {
+#' @noRd
+get_base_url <- function(endpoint = c("identitytoolkit", "securetoken")) {
+  endpoint <- match.arg(arg = endpoint)
+
   switch(
     EXPR = endpoint,
     identitytoolkit = "https://identitytoolkit.googleapis.com",
