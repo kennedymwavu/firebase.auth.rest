@@ -5,3 +5,5 @@
 ^pkgdown$
 ^\.github$
 ^dev\.R$
+^CRAN-SUBMISSION$
+^cran-comments\.md$
