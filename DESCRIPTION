@@ -1,12 +1,12 @@
 Package: firebase.auth.rest
-Title: R Wrapper for Firebase Authentication REST API
+Title: R Wrapper for 'Firebase Authentication REST API'
 Version: 1.0.0
 Authors@R: 
     person("Kennedy", "Mwavu", , "mwavukennedy@gmail.com", role = c("aut", "cre", "cph"),
            comment = c("Maintainer/developer of firebase.auth.rest since 2024", ORCID = "0009-0006-3157-7234"))
 Description: A convenient and user-friendly interface to 
-    interact with the Firebase Authentication REST API.
-    It enables R developers to integrate Firebase Authentication services 
+    interact with the 'Firebase Authentication REST API'.
+    It enables R developers to integrate 'Firebase Authentication' services 
     seamlessly into their projects, allowing for user authentication, account 
     management, and other authentication-related tasks.
 License: MIT + file LICENSE
