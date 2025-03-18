@@ -38,7 +38,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-refresh
 for more details
 }
 \examples{
-if (interactive()) {
+\dontrun{
   # first sign in user and get the 'refresh_token':
   user <- sign_in(email = "user@gmail.com", password = "password")
   refresh_token <- user$refreshToken

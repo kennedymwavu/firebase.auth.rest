@@ -35,7 +35,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-verify-
 for more details
 }
 \examples{
-if (interactive()) {
+\dontrun{
   exchange_custom_token(token = "your-firebase-auth-custom-token")
 }
 }

@@ -16,7 +16,7 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-verify-custom-token)
 #' for more details
 #' @examples
-#' if (interactive()) {
+#' \dontrun{
 #'   exchange_custom_token(token = "your-firebase-auth-custom-token")
 #' }
 #' @export

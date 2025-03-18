@@ -7,6 +7,7 @@
 #' @return String. Base url.
 #' @examples
 #' get_base_url()
+#' get_base_url(endpoint = "securetoken")
 #'
 #' @keywords internal
 #' @noRd

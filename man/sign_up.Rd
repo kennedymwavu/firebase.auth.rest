@@ -38,7 +38,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-create-
 for more details
 }
 \examples{
-if (interactive()) {
+\dontrun{
   sign_up(email = "new-user-email", password = "strong-password")
 }
 }

@@ -32,7 +32,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-send-pa
 for more details
 }
 \examples{
-if (interactive()) {
+\dontrun{
   send_password_reset_email("user-email-goes-here")
 }
 }

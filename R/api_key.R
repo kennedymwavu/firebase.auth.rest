@@ -5,7 +5,7 @@
 #'
 #' @return String
 #' @examples
-#' if (interactive()) {
+#' \dontrun{
 #'   api_key()
 #' }
 #' @keywords internal

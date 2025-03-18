@@ -53,7 +53,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-get-acc
 for more details
 }
 \examples{
-if (interactive()) {
+\dontrun{
   user_data <- get_user_data("<id_token>")
   lapply(user_data, `[[`, 1)
 }
