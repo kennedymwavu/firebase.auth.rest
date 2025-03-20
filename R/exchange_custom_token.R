@@ -15,6 +15,10 @@
 #' @details
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-verify-custom-token)
 #' for more details
+#' @examples
+#' \dontrun{
+#'   exchange_custom_token(token = "your-firebase-auth-custom-token")
+#' }
 #' @export
 exchange_custom_token <- function(token) {
   url_path <- "/v1/accounts:signInWithCustomToken"

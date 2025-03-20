@@ -40,7 +40,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-sign-in
 for more details.
 }
 \examples{
-if (interactive()) {
+\dontrun{
   user <- sign_in_anonymously()
   user
 }

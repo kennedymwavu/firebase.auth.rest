@@ -34,3 +34,8 @@ Exchanges a custom Auth token for an ID and refresh token
 Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-verify-custom-token}{Firebase Auth REST API docs}
 for more details
 }
+\examples{
+\dontrun{
+  exchange_custom_token(token = "your-firebase-auth-custom-token")
+}
+}

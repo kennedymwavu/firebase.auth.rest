@@ -27,7 +27,7 @@
 #'  Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-update-profile)
 #' for more details
 #' @examples
-#' if (interactive()) {
+#' \dontrun{
 #'   update_profile(
 #'     id_token = "id-token-goes-here",
 #'     display_name = "new-user-display-name",
@@ -41,10 +41,11 @@
 #' }
 #' @export
 update_profile <- function(
-    id_token,
-    display_name = NULL,
-    photo_url = NULL,
-    delete_attribute = NULL) {
+  id_token,
+  display_name = NULL,
+  photo_url = NULL,
+  delete_attribute = NULL
+) {
   url_path <- "/v1/accounts:update"
 
   data <- list(

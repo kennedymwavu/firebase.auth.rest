@@ -31,7 +31,7 @@
 #' Visit [Firebase Auth REST API docs](https://firebase.google.com/docs/reference/rest/auth#section-get-account-info)
 #' for more details
 #' @examples
-#' if (interactive()) {
+#' \dontrun{
 #'   user_data <- get_user_data("<id_token>")
 #'   lapply(user_data, `[[`, 1)
 #' }

@@ -54,7 +54,7 @@ Visit \href{https://firebase.google.com/docs/reference/rest/auth#section-update-
 for more details
 }
 \examples{
-if (interactive()) {
+\dontrun{
   update_profile(
     id_token = "id-token-goes-here",
     display_name = "new-user-display-name",

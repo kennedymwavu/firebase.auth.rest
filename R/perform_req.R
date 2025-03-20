@@ -24,6 +24,7 @@
 #'      - `code`: Error code
 #'      - `message`: Error message
 #' @keywords internal
+#' @noRd
 perform_req <- function(url_path, data, base_url = get_base_url()) {
   req <- httr2::req_body_json(
     req = httr2::req_url_query(

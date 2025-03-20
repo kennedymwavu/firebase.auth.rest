@@ -46,7 +46,7 @@ for more details
 }
 }
 \examples{
-if (interactive()) {
+\dontrun{
   # first sign in user and get the 'id_token':
   user <- sign_in(email = "user@gmail.com", password = "password")
   id_token <- user$idToken
