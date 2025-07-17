@@ -26,17 +26,12 @@
 #' @keywords internal
 #' @noRd
 perform_req <- function(url_path, data, base_url = get_base_url()) {
+  url <- paste0(base_url, url_path, "?key=", api_key())
   req <- httr2::req_body_json(
-    req = httr2::req_url_query(
-      .req = httr2::req_url_path(
-        req = httr2::request(base_url = base_url),
-        url_path
-      ),
-      key = api_key()
-    ),
-    data = data
-  )
-
+      req = httr2::request(base_url = url), 
+      data = data
+      )
+  
   tryCatch(
     expr = httr2::resp_body_json(
       resp = httr2::req_perform(req = req)
