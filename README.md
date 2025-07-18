@@ -1,5 +1,11 @@
 # firebase.auth.rest
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/kennedymwavu/firebase.auth.rest/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kennedymwavu/firebase.auth.rest/actions/workflows/R-CMD-check.yaml)
+[![CRAN status](https://www.r-pkg.org/badges/version/firebase.auth.rest)](https://CRAN.R-project.org/package=firebase.auth.rest)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+<!-- badges: end -->
+
 R wrapper for [Firebase Authentication REST API](https://firebase.google.com/docs/reference/rest/auth).
 
 Designed to be used on the backend of your R applications & APIs.
